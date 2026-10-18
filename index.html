@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scam Shield — Para sa Senior Citizens</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Scam Shield</h1>
+    <p class="subtitle">A practice guide for Filipino seniors. All examples are for learning only — not real messages.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="quiz-heading">
+      <h2 id="quiz-heading">Spot the Scam</h2>
+      <p class="section-intro">Read each sample. Is it a scam or a legitimate message?</p>
+
+      <article class="quiz-card" data-sample="gcash">
+        <p class="sample-message"><strong>Educational Example Only:</strong> “You received a ₱1,250 MERALCO refund. Confirm via [link] to credit to your GCash. Expires bukas if not claimed.”</p>
+        <div class="button-group">
+          <button type="button" class="quiz-btn" data-answer="scam">Scam</button>
+          <button type="button" class="quiz-btn" data-answer="legit">Legit</button>
+        </div>
+        <p class="feedback" role="status" aria-live="polite"></p>
+        <p class="explanation" hidden><strong>Red flags:</strong> Unsolicited link, artificial deadline, and a sender that is not the official GCash shortcode. GCash will never ask you to click a link to claim a refund. Open the app directly.</p>
+      </article>
+
+      <article class="quiz-card" data-sample="sss">
+        <p class="sample-message"><strong>Educational Example Only:</strong> A caller says she is from SSS and sends you a link to “update the SSS app” while you are on the phone. She asks you to stay on the line during installation.</p>
+        <div class="button-group">
+          <button type="button" class="quiz-btn" data-answer="scam">Scam</button>
+          <button type="button" class="quiz-btn" data-answer="legit">Legit</button>
+        </div>
+        <p class="feedback" role="status" aria-live="polite"></p>
+        <p class="explanation" hidden><strong>Red flags:</strong> Pressure to install during a call, a link that does not go to an official app store, and a request to stay on the line. Government agencies do not ask you to install apps through links.</p>
+      </article>
+
+      <article class="quiz-card" data-sample="dswd">
+        <p class="sample-message"><strong>Educational Example Only:</strong> “DSWD ayuda: ₱5,000 for qualified seniors. Confirm today at [link] or it will be forfeited bukas.”</p>
+        <div class="button-group">
+          <button type="button" class="quiz-btn" data-answer="scam">Scam</button>
+          <button type="button" class="quiz-btn" data-answer="legit">Legit</button>
+        </div>
+        <p class="feedback" role="status" aria-live="polite"></p>
+        <p class="explanation" hidden><strong>Red flags:</strong> A specific peso amount in an unsolicited SMS, a non-government domain, and a same-day deadline. DSWD does not distribute ayuda through text-message links.</p>
+      </article>
+
+      <article class="quiz-card" data-sample="parcel">
+        <p class="sample-message"><strong>Educational Example Only:</strong> “Your parcel failed delivery. Pay the ₱50 redelivery fee here: [link].” You were not expecting a parcel.</p>
+        <div class="button-group">
+          <button type="button" class="quiz-btn" data-answer="scam">Scam</button>
+          <button type="button" class="quiz-btn" data-answer="legit">Legit</button>
+        </div>
+        <p class="feedback" role="status" aria-live="polite"></p>
+        <p class="explanation" hidden><strong>Red flags:</strong> An unexpected parcel, a request for a fee through an SMS link, and an unknown sender. Legitimate couriers do not collect redelivery fees through links.</p>
+      </article>
+    </section>
+
+    <section aria-labelledby="checklist-heading">
+      <h2 id="checklist-heading">Before You Click</h2>
+      <p class="section-intro">Check each item after you have done it. Your progress is saved on this device.</p>
+      <fieldset class="checklist-group">
+        <legend>My safety checklist</legend>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-1">
+          <label for="check-1">I will not click links in messages I did not ask for.</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-2">
+          <label for="check-2">I will open the official app directly instead of using a link.</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-3">
+          <label for="check-3">I will not give my OTP, PIN, or password to anyone, even if they sound official.</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-4">
+          <label for="check-4">I will ask a family member I trust before sending money to a new recipient.</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-5">
+          <label for="check-5">I will download apps only from Google Play or the Apple App Store.</label>
+        </div>
+        <div class="checklist-item">
+          <input type="checkbox" id="check-6">
+          <label for="check-6">I know I can report a scam to 1326.</label>
+        </div>
+      </fieldset>
+      <p id="checklist-progress" class="progress-note" role="status" aria-live="polite"></p>
+    </section>
+
+    <section aria-labelledby="action-heading">
+      <h2 id="action-heading">What To Do If You Suspect a Scam</h2>
+      <ol class="action-steps">
+        <li><strong>Stop.</strong> Do not reply, do not click, and do not send money.</li>
+        <li><strong>Do not engage.</strong> End the call or close the message.</li>
+        <li><strong>Contact your bank or e-wallet</strong> through the official app or the number printed on your card. Do not use the number from the suspicious message.</li>
+        <li><strong>Report it.</strong> Call the CICC hotline <strong>1326</strong> or report to the PNP Anti-Cybercrime Group. Tell a family member or barangay official.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer>
+    <p>Scam Shield is an educational prototype. All sample messages are fictional and created for practice. For real concerns, contact your bank or CICC 1326.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
